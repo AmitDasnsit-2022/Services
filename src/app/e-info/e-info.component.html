@@ -1,0 +1,25 @@
+<h1>Data Service </h1>
+
+<form #frm="ngForm" (ngSubmit)="updateInfo(frm)">
+  <input type="text" name="location" value="" ngModel>
+  <button type="submit" name="button" >Add info</button>
+
+</form>
+<button type="button" (click)="getinfofromService1()">Employee 1</button>
+<ul>
+  <li *ngFor="let dt of inforecieved1">
+   {{dt}}
+  </li>
+</ul>
+<button (click)="getinfofromService2()">Employee 2</button>
+<ul>
+  <li *ngFor="let dt of inforecieved2">
+   {{dt}}
+  </li>
+</ul>
+<button (click)="getinfofromService3()">Employee 3</button>
+<ul>
+  <li *ngFor="let dt of inforecieved3">
+   {{dt}}
+  </li>
+</ul>
